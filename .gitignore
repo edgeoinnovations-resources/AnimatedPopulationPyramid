@@ -1,0 +1,25 @@
+# Data files (too large for git)
+*.csv
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.env
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code
+.claude/
+
+# Misc
+Wrong/
