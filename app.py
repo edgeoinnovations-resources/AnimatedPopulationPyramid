@@ -1,6 +1,6 @@
 """
 Animated Population Pyramid Dashboard
-UN World Population Prospects 2024 (1990-2030)
+UN World Population Prospects 2024 (1950-2030)
 
 Built with Streamlit + Plotly Express
 """
@@ -25,7 +25,7 @@ st.set_page_config(
 def load_data():
     """Load and preprocess the population data."""
     df = pd.read_csv(
-        "1 unpopulation_dataportal_20251228214054.csv",
+        "unpopulation_dataportal_20251230141141.csv",
         encoding="utf-8-sig",
         usecols=[
             "Location", "Iso3", "Time", "Sex", "SexId",
@@ -240,7 +240,7 @@ def format_population(value):
 def main():
     # Title
     st.title("🌍 Animated Population Pyramid")
-    st.markdown("**UN World Population Prospects 2024** | Data: 1990-2030")
+    st.markdown("**UN World Population Prospects 2024** | Data: 1950-2030")
 
     # Load data
     with st.spinner("Loading population data..."):
@@ -307,7 +307,7 @@ def main():
         using UN World Population Prospects 2024 data.
 
         **Features:**
-        - 📊 41 years of data (1990-2030)
+        - 📊 81 years of data (1950-2030)
         - 🌍 314 countries & regions
         - 👥 21 age groups
         - ▶️ Animated playback
